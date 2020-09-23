@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+}
+
+body {
+  Background-image: url(img/bg/bg0.png);
+  font-family: sans-serif;
+  color: #FFFFFF
+  /* background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+a {
+	color: #D0D0D0;
+}
+
+.flex-container {
+  /*width: 360px;
+  margin: auto;
+  background-color: #2D2D2D;
+  border-radius: 8px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
+
+.flex-container > a{
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #515357;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #fff;
+  box-shadow: 0 18px 13px -6px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+} 
+
+.flex-container > a:hover{
+  box-shadow: 0 25px 18px -6px rgba(0, 0, 0, 0.2);
+  background-color: #63b2fc;
+  color: #fff;
+} 
+
+.flex-container > span{
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #373b42;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #fff;
+  box-shadow: 0 18px 13px -6px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+} 
+
+.btn {
+  background-color: #3a9fff;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: #fff;
+  box-shadow: 0 18px 13px -6px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0 25px 18px -6px rgba(0, 0, 0, 0.2);
+  background-color: #63b2fc;
+  color: #fff;
+}
+
+.btn-page {
+  text-decoration: none;
+  background-color: #515357;
+  border-radius: 8px;
+  padding: 5px 5px;
+  color: #fff;
+  box-shadow: 0 18px 13px -6px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.btn-page:hover {
+  box-shadow: 0 25px 18px -6px rgba(0, 0, 0, 0.2);
+  background-color: #63b2fc;
+  color: #fff;
+}
