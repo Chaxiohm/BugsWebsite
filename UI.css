@@ -1,4 +1,8 @@
 @charset "utf-8";
+@font-face{ 
+ font-family: Furore;
+ src: url(fonts/Furore-webfont.woff);
+}
 /* CSS Document */
 html, body {
 }
@@ -36,7 +40,7 @@ a {
 
 .headbar{
 	background-color: #2D2D2D; 
-	padding: 4px 10px 0px 4px; 
+	padding: 0px 4px 0px 4px; 
 	border-radius: 6px;
 }
 .headbar > a > img{
@@ -44,6 +48,7 @@ a {
   background-color: #515357;
   border-radius: 6px;
   padding: 1px 1px;
+  margin-top: 4px;
   color: #fff;
   box-shadow: 0 18px 13px -6px rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
@@ -52,11 +57,16 @@ a {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-
 .headbar > a > img:hover {  
   box-shadow: 0 25px 18px -6px rgba(0, 0, 0, 0.2);
   background-color: #63b2fc;
   color: #fff;
+}
+.headbar > span{
+  font-size: 28pt;
+  font-family: Furore;
+  text-align: center;
+  vertical-align: super;
 }
 
 .flex-container {
