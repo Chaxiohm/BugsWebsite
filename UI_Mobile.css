@@ -27,6 +27,7 @@ a {
   align-items: center;
 }
 .post{
+	margin: 10px 0px;
 	text-align: center;
 	width: 100%;
 	background-color: #2D2D2D;
@@ -50,9 +51,14 @@ a {
 	height: 8px;
 	text-align: center;
 }
+.post > video{
+	display: block;
+	width: 100%;
+}
+
 .logo{
 	text-align: center;
-	margin-top: 50px;
+	margin: 50px 0px 10px 0px;
 	width: 100%;
 	background-color: #2D2D2D;
 	padding: 0px 0px 0px 0px;
@@ -65,7 +71,7 @@ a {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	background-color: #3D3DFD; 
+	background-color: #3D3D3D; 
 	padding: 0px 4px 0px 4px; 
 	border-radius: 0px 0px 6px 6px;
 	box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.2);
@@ -99,17 +105,14 @@ a {
 	vertical-align: super;
 }
 
-.flex-container {
-  /*width: 360px;
-  margin: auto;
-  background-color: #2D2D2D;
-  border-radius: 8px;*/
+.flex-page-btn {
+  margin: 10px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 } 
-.flex-container > a{
+.flex-page-btn > a{
   font-size: 20px;
   text-decoration: none;
   background-color: #515357;
@@ -123,12 +126,12 @@ a {
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 } 
-.flex-container > a:hover{
+.flex-page-btn > a:hover{
   box-shadow: 0 25px 18px -6px rgba(0, 0, 0, 0.2);
   background-color: #63b2fc;
   color: #fff;
 } 
-.flex-container > span{
+.flex-page-btn > span{
   font-size: 20px;
   text-decoration: none;
   background-color: #373b42;
