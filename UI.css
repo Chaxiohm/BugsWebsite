@@ -51,8 +51,8 @@ a {
 	text-align: center;
 }
 .logo{
-	height: initial;
 	text-align: center;
+	margin-top: 50px;
 	width: 50%;
 	background-color: #2D2D2D;
 	padding: 0px 0px 0px 0px;
