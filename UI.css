@@ -61,9 +61,13 @@ a {
 
 .headbar{
 	position: fixed;
+	width: auto;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 	background-color: #3D3D3D; 
 	padding: 0px 4px 0px 4px; 
-	border-radius: 6px;
+	border-radius: 0px 0px 6px 6px;
 	box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.2);
 }
 .headbar > a > img{
