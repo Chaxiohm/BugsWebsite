@@ -6,16 +6,16 @@
     x.style.display = "none";
   }
 }*/
-if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css');
+if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css'); // Если не найдено совпадений с мобильными ОС - грузить ПК стиль
 else addCSS('UI_Mobile.css');
-console.log(navigator.userAgent);
 
-function testSize(){
+function testClient(){ // Временная ф-ция для получения инфы о клиенте
 document.write("Height: " + document.documentElement.clientHeight + " ");
 document.write("Width: " + document.documentElement.clientWidth + " ");
+document.write("Platform: " + navigator.userAgent + " ");
 }
 
-function addCSS(filename){
+function addCSS(filename){ // Добавление стиля к документу
  var head = document.getElementsByTagName('head')[0];
  var style = document.createElement('link');
  style.href = filename;
