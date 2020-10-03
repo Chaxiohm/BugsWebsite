@@ -6,16 +6,21 @@
     x.style.display = "none";
   }
 }*/
-if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css');
+if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css'); // Если не найдено совпадений с мобильными ОС - грузить ПК стиль
 else addCSS('UI_Mobile.css');
-console.log(navigator.userAgent);
 
-function testSize(){
-document.write("Height: " + document.documentElement.clientHeight + " ");
-document.write("Width: " + document.documentElement.clientWidth + " ");
+function testClient(){ // Получения инфы о клиенте (Отладка)
+document.write("Height: " + document.documentElement.clientHeight + "<br>");
+document.write("Width: " + document.documentElement.clientWidth + "<br>");
+document.write("UserAgent: " + navigator.userAgent + "<br>");
+document.write("doNotTrack: " + navigator.doNotTrack + "<br>");
+document.write("Languages: " + navigator.languages + "<br>");
+document.write("Logical Processors: " + navigator.hardwareConcurrency + "<br>");
+document.write("Device Memory: " + navigator.deviceMemory + "<br>");
+document.write("Max Touch Points: " + navigator.maxTouchPoints + "<br>");
 }
 
-function addCSS(filename){
+function addCSS(filename){ // Добавление стиля к документу
  var head = document.getElementsByTagName('head')[0];
  var style = document.createElement('link');
  style.href = filename;
