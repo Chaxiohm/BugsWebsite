@@ -6,6 +6,11 @@
     x.style.display = "none";
   }
 }*/
+function sizeTest(){
+document.write("Height: " + document.documentElement.clientHeight + " ");
+document.write("Width: " + document.documentElement.clientWidth);
+}
+
 function onHoverBtnMenu(){
   document.getElementById("menu").style.visibility = "visible";
   document.getElementById("menu").style.opacity = 1;
