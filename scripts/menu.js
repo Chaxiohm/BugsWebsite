@@ -9,10 +9,15 @@
 if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css'); // Если не найдено совпадений с мобильными ОС - грузить ПК стиль
 else addCSS('UI_Mobile.css');
 
-function testClient(){ // Временная ф-ция для получения инфы о клиенте
-document.write("Height: " + document.documentElement.clientHeight + " ");
-document.write("Width: " + document.documentElement.clientWidth + " ");
-document.write("Platform: " + navigator.userAgent + " ");
+function testClient(){ // Получения инфы о клиенте (Отладка)
+document.write("Height: " + document.documentElement.clientHeight + "<br>");
+document.write("Width: " + document.documentElement.clientWidth + "<br>");
+document.write("UserAgent: " + navigator.userAgent + "<br>");
+document.write("doNotTrack: " + navigator.doNotTrack + "<br>");
+document.write("Languages: " + navigator.languages + "<br>");
+document.write("Logical Processors: " + navigator.hardwareConcurrency + "<br>");
+document.write("Device Memory: " + navigator.deviceMemory + "<br>");
+document.write("Max Touch Points: " + navigator.maxTouchPoints + "<br>");
 }
 
 function addCSS(filename){ // Добавление стиля к документу
