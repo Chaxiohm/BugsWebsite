@@ -8,7 +8,8 @@
 }*/
 function sizeTest(){
 document.write("Height: " + document.documentElement.clientHeight + " ");
-document.write("Width: " + document.documentElement.clientWidth);
+document.write("Width: " + document.documentElement.clientWidth + " ");
+document.write("Plarform: " + navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i));
 }
 
 function onHoverBtnMenu(){
