@@ -6,6 +6,24 @@
     x.style.display = "none";
   }
 }*/
+if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css');
+else addCSS('UI_Mobile.css');
+sizeTest();
+
+function sizeTest(){
+document.write("Height: " + document.documentElement.clientHeight + " ");
+document.write("Width: " + document.documentElement.clientWidth + " ");
+}
+
+function addCSS(filename){
+ var head = document.getElementsByTagName('head')[0];
+ var style = document.createElement('link');
+ style.href = filename;
+ style.type = 'text/css';
+ style.rel = 'stylesheet';
+ head.append(style);
+}
+
 function onHoverBtnMenu(){
   document.getElementById("menu").style.visibility = "visible";
   document.getElementById("menu").style.opacity = 1;

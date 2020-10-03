@@ -44,7 +44,8 @@ a {
 	border-radius: 6px 6px 0px 0px
 }
 .post > div > p{ /* Шапка поста */
-	font-size: 14pt;
+	margin: 10px;
+	font-size: 12pt;
 	text-align: center;
 }
 .post > p{ /* Тело поста */
