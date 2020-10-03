@@ -8,6 +8,7 @@
 }*/
 if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i) == null) addCSS('UI.css');
 else addCSS('UI_Mobile.css');
+console.log(navigator.userAgent);
 
 function testSize(){
 document.write("Height: " + document.documentElement.clientHeight + " ");
