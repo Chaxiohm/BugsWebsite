@@ -1,2 +1,2 @@
 # BugsWebsite
-Test repo for host web project for learning web programming
+Test repo to host web project for learning web programming
