@@ -9,10 +9,10 @@
 	<script src="scripts/menu.js" type="text/javascript"></script>
 </head>
 
-<body onclick="onLeaveMenu()" style="background: url(img/bg/bg_paladins.jpg) center top fixed #666;" text="ffffff" link="D0D0D0" vlink="B0B0B0">
+<body onmousedown="onLeaveMenu()" style="background: url(img/bg/bg_paladins.jpg) center top fixed #666;" text="ffffff" link="D0D0D0" vlink="B0B0B0">
 <!-- Header -->
 <div class="headbar">
-<a href="http://st1.irttri.com" title="На общую"><img src="img/icons/36dpi/dns.svg" alt="Back to common"></a> <a href="index.html" title="На гланую"><img src="img/icons/36dpi/home.svg"  alt="Back to main"></a> <span> BUGBOARD </span> <a onmouseenter="onHoverBtnMenu()"><img align="right" src="img/icons/36dpi/menu.svg"></a>
+<a href="http://st1.irttri.com" title="На общую"><img src="img/icons/dns.svg" alt="Back to common"></a> <a href="index.html" title="На гланую"><img src="img/icons/home.svg"  alt="Back to main"></a> <span> BUGBOARD </span> <a onmouseup="onHoverBtnMenu()"><img align="right" src="img/icons/menu.svg"></a>
 </div>
 <ul class="menu" id="menu" onmouseleave="onLeaveMenu()">
 	<li> Пункт 1 </li>
@@ -27,7 +27,7 @@
 
 <div class="flex-page-btn">
   <a href="index.html"> << </a href> 
-  <a href="index.html"><img src="img/icons/36dpi/home.svg" alt="Back to main" height=18px width=18px></a href>
+  <a href="index.html"><img src="img/icons/home.svg" alt="Back to main"></a href>
   <span> 1 </span> 
   <a href="2.html"> 2 </a href>
   <a href="3.html"> 3 </a href> 
@@ -35,27 +35,33 @@
 </div>
 
 <div class="post">
-	<div> <p> Персонаж завис в "Т-позе" (справа)</p> </div>
+	<div id="post-header"> <p> Персонаж завис в "Т-позе" (справа)</p> </div>
 	<img src="img\0.png" alt="Очередной баг">
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 2560 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 <div class="post">
-	<div> <p> Возможность активировать невидимость одновременно с маунтом </p> </div>
+	<div id="post-header"> <p> Возможность активировать невидимость одновременно с маунтом </p> </div>
 	<img src="img\1.png" alt="Очередной баг">
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 11508 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 
 <div class="post">
-	<div> <p> Часть меши Галинга деформированна</p> </div>
+	<div id="post-header"> <p> Часть меши Галинга деформированна</p> </div>
 	<img src="img\2.png" alt="Очередной баг">
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 981 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 
 </div>
 <!-- Pages -->
 <div class="flex-page-btn">
   <a href="index.html"> << </a href> 
-  <a href="index.html"><img src="img/icons/36dpi/home.svg" alt="Back to main" height=18px width=18px></a href>
+  <a href="index.html"><img src="img/icons/home.svg" alt="Back to main"></a href>
   <span> 1 </span> 
   <a href="2.html"> 2 </a href>
   <a href="3.html"> 3 </a href> 

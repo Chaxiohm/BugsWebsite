@@ -9,18 +9,25 @@
 	<script src="scripts/menu.js" type="text/javascript"></script>
 </head>
 
-<body style="background: url(img/bg/bg_skyrim.jpg) center top fixed #666;" text="ffffff" link="D0D0D0" vlink="B0B0B0">
+<body onmousedown="onLeaveMenu()" style="background: url(img/bg/bg_skyrim.jpg) center top fixed #666;" text="ffffff" link="D0D0D0" vlink="B0B0B0">
 <!-- Header -->
 <div class="headbar">
-<a href="http://st1.irttri.com" title="На общую"><img src="img/icons/36dpi/dns.svg" alt="Back to common"></a> <a href="index.html" title="На гланую"><img src="img/icons/36dpi/home.svg"  alt="Back to main"></a> <span> BUGBOARD </span> <a><img align="right" src="img/icons/36dpi/menu.svg"></a>
+<a href="http://st1.irttri.com" title="На общую"><img src="img/icons/dns.svg" alt="Back to common"></a> <a href="index.html" title="На гланую"><img src="img/icons/home.svg"  alt="Back to main"></a> <span> BUGBOARD </span> <a onmouseup="onHoverBtnMenu()"><img align="right" src="img/icons/menu.svg"></a>
 </div>
+<ul class="menu" id="menu" onmouseleave="onLeaveMenu()">
+	<li> Пункт 1 </li>
+	<li> Пункт 2 </li>
+	<li> Пункт 3 </li>
+	<li> Пункт 4 </li>
+</ul>
+
 <!-- Feed -->
 <div class="flex-feed">
 <img class="logo" src="img/logos/skyrim_logo.png" alt="Game Logo">
 
 <div class="flex-page-btn">
   <a href="1.html"> << </a href> 
-  <a href="index.html"><img src="img/icons/36dpi/home.svg" alt="Back to main" height=18px width=18px></a href>
+  <a href="index.html"><img src="img/icons/home.svg" alt="Back to main"></a href>
   <a href="1.html"> 1 </a href> 
   <span> 2 </span>
   <a href="3.html"> 3 </a href> 
@@ -28,26 +35,32 @@
 </div> 
 
 <div class="post">
-	<div><p> Дракон кажется попал в вихрь </p></div>
+	<div id="post-header"><p> Дракон кажется попал в вихрь </p></div>
 	<video controls="controls" alt="Очередной баг"><source src="vid/skyrim_dragomixer.mp4"></video>
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 8769 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 <div class="post">
-	<div> <p> Странные вещи творяться на этом Солстхейме </p> </div>
+	<div id="post-header"> <p> Странные вещи творяться на этом Солстхейме </p> </div>
 	<video controls="controls" alt="Очередной баг"><source src="vid/skyrim_solstheim.mp4"></video>
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 10351 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 <div class="post">
-	<p> Даже после смерти курица пытается сбежать </p>
+	<div id="post-header"> <p> Даже после смерти курица пытается сбежать </p> </div>
 	<video controls="controls" alt="Очередной баг"><source src="vid/skyrim_chicken.mp4"></video>
-	<p>Здесь будут кнопки</p>
+	<div id="post-footer">
+		<div id="rating"> <img src="img/icons/rating_arrow_up.svg"> <span id="ratingValue"> 6054 </span> <img src="img/icons/rating_arrow_down.svg"> </div>
+	</div>
 </div>
 
 </div>
 <!-- Pages -->
 <div class="flex-page-btn">
   <a href="1.html"> << </a href> 
-  <a href="index.html"><img src="img/icons/36dpi/home.svg" alt="Back to main" height=18px width=18px></a href>
+  <a href="index.html"><img src="img/icons/home.svg" alt="Back to main"></a href>
   <a href="1.html"> 1 </a href> 
   <span> 2 </span>
   <a href="3.html"> 3 </a href> 
