@@ -1,11 +1,8 @@
+/* CSS Document */
 @charset "utf-8";
 @font-face{ 
  font-family: Furore;
  src: url(fonts/Furore-webfont.woff);
-}
-
-/* CSS Document */
-html, body {
 }
 
 body {
